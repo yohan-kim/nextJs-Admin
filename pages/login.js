@@ -2,6 +2,8 @@ import { GoogleLogin, GoogleLogout } from 'react-google-login';
 import BaseLayout from '../components/layouts/BaseLayout';
 import { userLogin } from '../actions';
 import { Router } from '../routes';
+import { connect } from 'react-redux';
+
 
 
 const Login = (props) => {
@@ -29,5 +31,7 @@ const Login = (props) => {
 
     );
 };
-
 export default Login;
+// const mapDispatchToProps
+
+// export default connect(null,)(Login);
